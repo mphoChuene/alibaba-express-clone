@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import img1 from "../../assets/img/iphone14/mockup-free-NcmG1X1DWrI-unsplash.jpg";
 
 const MainContainer = styled.div`
   display: flex;
@@ -8,10 +9,9 @@ const MainContainer = styled.div`
   margin: 15px;
 `;
 const ProductContainer = styled.div`
-  padding: 20px;
-  height: 300px;
+  height: 350px;
   width: 340px;
-  background-color: pink;
+  background-color: whitesmoke;
   margin-right: 40px;
   margin-top: 40px;
   border-radius: 30px;
@@ -26,7 +26,16 @@ const ProductListings = () => {
       </h2>
       <MainContainer>
         <ProductContainer>
-          <h3>product</h3>
+          <img
+            src={img1}
+            alt=""
+            style={{ height: "300px", width: "340px", borderRadius: "30px" }}
+          />
+          {/* write the product description and price here */}
+          <h3 style={{ fontFamily: "poppins" }}>Iphone 14 Pro Max 256 GB</h3>
+          <p style={{ fontWeight: "bold", marginBottom: "60px" }}>
+            price: R20 000
+          </p>
         </ProductContainer>
         <ProductContainer>
           <h3>product</h3>
