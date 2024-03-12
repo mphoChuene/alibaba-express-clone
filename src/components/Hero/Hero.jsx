@@ -27,7 +27,7 @@ const ListingSubcontainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: #F5F5F5; 
+// background-color: #F5F5F5; 
 `
 
 const Title = styled.h6`
