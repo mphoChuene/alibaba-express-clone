@@ -16,6 +16,7 @@ const Maincontainer = styled.div`
   justify-content: space-around;
   margin-top: 30px;
   margin: 80px;
+  scale: 0.87;
 `;
 const Subcontainer = styled.div``;
 const Registration = styled.div`

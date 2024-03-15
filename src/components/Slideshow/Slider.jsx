@@ -13,6 +13,9 @@ const MainContainer = styled.div`
   flex-direction: row;
   overflow-x: auto;
   scroll-behavior: smooth;
+  align-items: center;
+  justify-content: center;
+  // background-color: blue;
 `;
 
 const ImageContainer = styled.div`
@@ -53,23 +56,11 @@ const Slider = () => {
 
   return (
     <div>
-        <h2 style={{ textAlign: "center", fontWeight: "bolder"}}>BROWSE CATEGORIES</h2>
+      <h2 style={{ textAlign: "center", fontWeight: "bolder" }}>
+        BROWSE CATEGORIES
+      </h2>
       <button onClick={scrollLeft}>{"<"}</button>
       <MainContainer ref={scrollRef}>
-        <ImageContainer style={{ marginLeft: "230px"}}>
-          <img
-            src={iphone1}
-            alt=""
-            style={{
-              height: "200px",
-              width: "200px",
-              borderRadius: "200px",
-              alignSelf: "center",
-              marginRight: "20px",
-            }}
-          />
-          <p style={{textAlign: "center", fontWeight: "bold", margin: "20px"}}>Phones</p>
-        </ImageContainer>
         <ImageContainer>
           <img
             src={image0}
@@ -82,10 +73,13 @@ const Slider = () => {
               marginRight: "20px",
             }}
           />
-          <p style={{textAlign: "center", fontWeight: "bold", margin: "20px"}}>Phone case</p>
+          <p
+            style={{ textAlign: "center", fontWeight: "bold", margin: "20px" }}>
+            Phone case
+          </p>
         </ImageContainer>
         <ImageContainer>
-        <img
+          <img
             src={image1}
             alt=""
             style={{
@@ -96,10 +90,13 @@ const Slider = () => {
               marginRight: "20px",
             }}
           />
-          <p style={{textAlign: "center", fontWeight: "bold", margin: "20px"}}>Crocs</p>
+          <p
+            style={{ textAlign: "center", fontWeight: "bold", margin: "20px" }}>
+            Crocs
+          </p>
         </ImageContainer>
         <ImageContainer>
-        <img
+          <img
             src={image3}
             alt=""
             style={{
@@ -110,24 +107,14 @@ const Slider = () => {
               marginRight: "20px",
             }}
           />
-          <p style={{textAlign: "center", fontWeight: "bold", margin: "20px"}}>Tekkies</p>
+          <p
+            style={{ textAlign: "center", fontWeight: "bold", margin: "20px" }}>
+            Tekkies
+          </p>
         </ImageContainer>
+
         <ImageContainer>
-        <img
-            src={image5}
-            alt=""
-            style={{
-              height: "200px",
-              width: "200px",
-              borderRadius: "200px",
-              alignSelf: "center",
-              marginRight: "20px",
-            }}
-          />
-          <p style={{textAlign: "center", fontWeight: "bold", margin: "20px"}}>Weave</p>
-        </ImageContainer>
-        <ImageContainer>
-        <img
+          <img
             src={image4}
             alt=""
             style={{
@@ -138,7 +125,10 @@ const Slider = () => {
               marginRight: "20px",
             }}
           />
-          <p style={{textAlign: "center", fontWeight: "bold", margin: "20px"}}>Home Decor</p>
+          <p
+            style={{ textAlign: "center", fontWeight: "bold", margin: "20px" }}>
+            Home Decor
+          </p>
         </ImageContainer>
       </MainContainer>
       <button onClick={scrollRight}>{">"}</button>

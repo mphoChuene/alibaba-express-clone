@@ -30,7 +30,7 @@ const ProductContainer = styled.div`
 
 const ProductListings = () => {
   return (
-    <div style={{ marginLeft: "15px", scale: "0.92" }}>
+    <div style={{ marginLeft: "15px", scale: "0.70" }}>
       <h2 style={{ fontFamily: "poppins", fontSize: "30px", margin: "10px" }}>
         More To Love
       </h2>
