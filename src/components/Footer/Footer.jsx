@@ -29,7 +29,7 @@ const Center = styled.div`
 const Right = styled.div`
   // flex: 1;
   padding: 20px;
-  background-color: blue;
+  // background-color: blue;
   height: 260px;
 `;
 const Logo = styled.h1``;
@@ -48,7 +48,7 @@ const SocialIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  margin: 10px;
 `;
 const Description = styled.p`
   margin: 20px 0px;
@@ -99,24 +99,6 @@ const Footer = () => {
             <li>Take our feedback survey</li>
           </ul>
           <br></br>
-
-          <SocialContainer>
-            <SocialIcon color="#3B5999">
-              <Facebook />
-            </SocialIcon>
-
-            <SocialIcon color="#E4405F">
-              <Instagram />
-            </SocialIcon>
-
-            <SocialIcon color="#55ACEE">
-              <Twitter />
-            </SocialIcon>
-
-            <SocialIcon color="#E60023">
-              <Pinterest />
-            </SocialIcon>
-          </SocialContainer>
         </Left>
         <Center>
           <Title>Shopping with us</Title>
@@ -125,24 +107,26 @@ const Footer = () => {
             <ListItem>Delivery options</ListItem>
             <ListItem>Buyer Protection</ListItem>
           </List>
-          
         </Center>
         <Right>
           <Title style={{ fontFamily: "poppins" }}>stay connected</Title>
-          <ContactItem>
-            <Room style={{ marginRight: "15px" }} />
-            22 helen Joseph, South Gate, Johannesburg
-          </ContactItem>
-          <ContactItem>
-            <Phone style={{ marginRight: "15px" }} />
-            +27 65 2433 454
-          </ContactItem>
-          <ContactItem style={{ marginLeft: "40px" }}>
-            Developed with ❤️ by Kega M
-          </ContactItem>
-          <ContactItem>
-            <PaymentTypes />
-          </ContactItem>
+          <SocialContainer>
+            <SocialIcon color="black">
+              <Facebook />
+            </SocialIcon>
+
+            <SocialIcon color="black">
+              <Instagram />
+            </SocialIcon>
+
+            <SocialIcon color="black">
+              <Twitter />
+            </SocialIcon>
+
+            <SocialIcon color="black">
+              <Pinterest />
+            </SocialIcon>
+          </SocialContainer>
         </Right>
       </div>
       {/* subcontainer for the bottom footer  */}
@@ -158,7 +142,7 @@ const Footer = () => {
             display: "flex",
             flexDirection: "row",
             // backgroundColor: "red",
-            margin:'0px 70px',
+            margin: "0px 70px",
             // width: "60vw",
             // border: "1px red solid",
             alignItems: "center",
@@ -178,7 +162,7 @@ const Footer = () => {
               Blog, Seller Portal, BLACK FRIDAY, AliExpress Assistant
             </p>
           </div>
-          
+
           <div style={{}}>
             <h2>AliExpress Multi-Language Sites </h2>
             <p>
@@ -189,17 +173,30 @@ const Footer = () => {
             <br></br>
             <h2> Alibaba Group </h2>
             <p>
-            Russian, Portuguese, Spanish, French, German, Italian, Dutch, 
-            Turkish, Japanese, Korean, Thai, Vietnamese, Arabic, Hebrew, Polish
+              Russian, Portuguese, Spanish, French, German, Italian, Dutch,
+              Turkish, Japanese, Korean, Thai, Vietnamese, Arabic, Hebrew,
+              Polish
             </p>
           </div>
         </div>
       </div>
-      <p style={{ color: "white", background: "black", 
-      marginLeft: "50px", marginRight: "50px", 
-      padding: "30px", marginTop: "40px"}}>Intellectual Property Protection - Privacy Policy - Sitemap - Terms of Use - Information for EU consumers - Imprint - Transaction Services Agreement for non-EU/UK Consumers - Terms and Conditions for EU/EEA/UK 
-        Consumers - User Information Legal Enquiry Guide ©️2010-2023 AliExpress.com. All rights reserved. 增值电信业务经营许可证 
-        增值电信业务经营许可证 浙B2-20120091-8 浙公网安备 浙公网安备 33010802002248号</p>
+      <div style={{ background: "black", marginTop: "80px", height: "300px" }}>
+        <p
+          style={{
+            color: "white",
+            padding: "30px",
+            margin: "0px 50px",
+            fontSize: "20px",
+          }}>
+          Intellectual Property Protection - Privacy Policy - Sitemap - Terms of
+          Use - Information for EU consumers - Imprint - Transaction Services
+          Agreement for non-EU/UK Consumers - Terms and Conditions for EU/EEA/UK
+          Consumers - User Information Legal Enquiry Guide ©️2010-2023
+          AliExpress.com. All rights reserved. 增值电信业务经营许可证
+          增值电信业务经营许可证 浙B2-20120091-8 浙公网安备 浙公网安备
+          33010802002248号
+        </p>
+      </div>
     </Container>
   );
 };

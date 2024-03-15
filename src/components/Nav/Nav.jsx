@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import SearchIcon from "@mui/icons-material/Search";
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Badge from '@mui/material/Badge';
-import Select from '@mui/material/Select'; 
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Badge from "@mui/material/Badge";
+import Select from "@mui/material/Select";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 const Container = styled.div`
   background-color: black;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 200px;
@@ -22,7 +22,7 @@ const Logo = styled.h1`
   font-size: 30px;
   color: white;
   margin-left: 20px; /* Added margin to push the logo to the left */
-  font-family: "Poppins", sans-serif
+  font-family: "Poppins", sans-serif;
 `;
 
 const Nav = styled.nav`
@@ -75,12 +75,13 @@ const Categories = styled.h5`
   color: white;
   font-size: 15px;
   margin: 10px;
-  font-family: "Poppins", sans-serif
+  font-family: "Poppins", sans-serif;
   // background-color: green
 `;
 
 const Navbar = () => {
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState("");
+  const [cartCount, setCartCount] = useState(1);
 
   const handleChange = (event) => {
     setCategory(event.target.value);
@@ -97,10 +98,12 @@ const Navbar = () => {
         <NavMenu>
           <NavMenuItem>dropdown tag</NavMenuItem>
           <NavMenuItem>dropdown flag</NavMenuItem>
-          <NavMenuItem><PersonOutlineOutlinedIcon/></NavMenuItem>
           <NavMenuItem>
-            <Badge badgeContent={2} color="primary">
-              <ShoppingCartOutlinedIcon/> 
+            <PersonOutlineOutlinedIcon />
+          </NavMenuItem>
+          <NavMenuItem>
+            <Badge badgeContent={cartCount} color="primary" >
+              <ShoppingCartOutlinedIcon />
             </Badge>
           </NavMenuItem>
           {/* Add more menu items as needed */}
@@ -108,15 +111,23 @@ const Navbar = () => {
       </Nav>
       <Subcontainer>
         <div>
-        <FormControl sx={{ m: 1, minWidth: 170 }} size="small">
-            <InputLabel id="demo-simple-select-label" style={{color:'white', border:'1px solid white',padding:'0 20px', borderRadius:'15px'}}>all categories</InputLabel>
+          <FormControl sx={{ m: 1, minWidth: 170 }} size="small">
+            <InputLabel
+              id="demo-simple-select-label"
+              style={{
+                color: "white",
+                border: "1px solid white",
+                padding: "0 20px",
+                borderRadius: "15px",
+              }}>
+              all categories
+            </InputLabel>
             <Select
               labelId="demo-simple-select-label"
               id="demo-simple-select"
               value={category}
               label="all categories"
-              onChange={handleChange}
-            >
+              onChange={handleChange}>
               <MenuItem value={10}>Ten</MenuItem>
               <MenuItem value={20}>Twenty</MenuItem>
               <MenuItem value={30}>Thirty</MenuItem>
