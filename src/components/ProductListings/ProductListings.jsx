@@ -16,7 +16,7 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 15px;
+  margin: 10px;
 `;
 const ProductContainer = styled.div`
   height: 480px;
@@ -32,7 +32,7 @@ const ProductListings = () => {
   return (
     <div style={{ marginLeft: "15px", scale: "0.92" }}>
       <h2 style={{ fontFamily: "poppins", fontSize: "30px", margin: "10px" }}>
-        product listings
+        More To Love
       </h2>
       <MainContainer>
         <ProductContainer>
@@ -54,8 +54,9 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p>.-84%</p>
+            <p style={{ color: "crimson"}}> -5% OFF</p>
           </div>
+          
         </ProductContainer>
         <ProductContainer>
           <img
@@ -76,8 +77,9 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p>.-84%</p>
+            <p style={{ color: "crimson"}}> 20% OFF</p>
           </div>
+          <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
         <ProductContainer>
           <img
@@ -106,8 +108,9 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p>.-84%</p>
+            <p style={{ color: "crimson"}}> -8% OFF</p>
           </div>
+          <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
         <ProductContainer>
           <img
@@ -128,8 +131,9 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p>.-84%</p>
+            <p style={{ color: "crimson"}}> EXTRA 10% OFF in bulk...</p>
           </div>
+          <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
         <ProductContainer>
           <img
@@ -151,8 +155,9 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p>.-84%</p>
+            <p style={{ color: "crimson"}}> -5% OFF in bulk</p>
           </div>
+          <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
       </MainContainer>
       <MainContainer>
@@ -167,7 +172,6 @@ const ProductListings = () => {
           <Rating name="readOnly" readOnly value={2} sx={{ color: "black" }} />
           <p style={{ fontWeight: "bold", fontSize: "20px" }}>
             price: R140,00 <br />
-            Free shipping
           </p>
           <div style={{ display: "flex", flexDirection: "row" }}>
             <p
@@ -178,8 +182,9 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p>.-84%</p>
+            <p style={{ color: "crimson"}}> 40% OFF...</p>
           </div>
+          <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
         <ProductContainer>
           <img
@@ -200,8 +205,9 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p>.-84%</p>
+            <p style={{ color: "crimson"}}> -5% OFF</p>
           </div>
+          <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
         <ProductContainer>
           <img
@@ -222,8 +228,9 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p>.-84%</p>
+            <p style={{ color: "crimson"}}> -5% OFF in bulk...</p>
           </div>
+          <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
         <ProductContainer>
           <img
@@ -244,8 +251,9 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p>.-84%</p>
+            <p style={{ color: "crimson"}}> Extra 5% Off in coins</p>
           </div>
+          <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
         <ProductContainer>
           <img
@@ -270,7 +278,7 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p>.-84%</p>
+            <p style={{ color: "crimson"}}> - -68%</p>
           </div>
           <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>

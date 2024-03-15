@@ -15,7 +15,7 @@ const Container = styled.div`
   flex-direction:column;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 200px;
 `;
 
 const Logo = styled.h1`

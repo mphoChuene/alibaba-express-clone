@@ -8,7 +8,8 @@ const Subdiv = styled.div`
     flex-direction: row;
     align-items: center; 
     justify-content: space-around;
-    padding-top:45px
+    padding: 20px;
+    margin: 20px;
 `
 const Heading = styled.h1`
 font-weight: bold;

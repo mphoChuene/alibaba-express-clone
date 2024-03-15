@@ -12,6 +12,8 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   background-color: whitesmoke;
+  height: 500px;
+  flex-direction: column;
 `;
 const Left = styled.div`
   flex: 1;
@@ -22,10 +24,13 @@ const Left = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  text-indent: -240px;
 `;
 const Right = styled.div`
-  flex: 1;
+  // flex: 1;
   padding: 20px;
+  background-color: blue;
+  height: 260px;
 `;
 const Logo = styled.h1``;
 
@@ -62,9 +67,10 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-  width: 50%;
+  width: 90%;
   margin-bottom: 10px;
   cursor: pointer;
+  margin-right: 300px;
 `;
 const ContactItem = styled.div`
   cursor: pointer;
@@ -81,66 +87,119 @@ const PaymentTypes = styled.div`
 const Footer = () => {
   return (
     <Container>
-      <Left>
-        <Logo>Customer service</Logo>
-        <ul style={{ listStyleType: "none" }}>
-          <li>Help center</li>
-          <li>Transaction Services Agreement for</li>
-          <li>non-EU/UK Consumers</li>
-          <li>Terms and Conditions for EU/EEA/UK</li>
-          <li>Consumer Transactions </li>
-          <li>Take our feedback survey</li>
-        </ul>
-        <SocialContainer>
-          <SocialIcon color="#3B5999">
-            <Facebook />
-          </SocialIcon>
+      <div style={{ display: "flex" }}>
+        <Left>
+          <Logo>Customer service</Logo>
+          <ul style={{ listStyleType: "none" }}>
+            <li>Help center</li>
+            <li>Transaction Services Agreement for</li>
+            <li>non-EU/UK Consumers</li>
+            <li>Terms and Conditions for EU/EEA/UK</li>
+            <li>Consumer Transactions </li>
+            <li>Take our feedback survey</li>
+          </ul>
+          <br></br>
 
-          <SocialIcon color="#E4405F">
-            <Instagram />
-          </SocialIcon>
+          <SocialContainer>
+            <SocialIcon color="#3B5999">
+              <Facebook />
+            </SocialIcon>
 
-          <SocialIcon color="#55ACEE">
-            <Twitter />
-          </SocialIcon>
+            <SocialIcon color="#E4405F">
+              <Instagram />
+            </SocialIcon>
 
-          <SocialIcon color="#E60023">
-            <Pinterest />
-          </SocialIcon>
-        </SocialContainer>
-      </Left>
-      <Center>
-        <Title>Shopping with us</Title>
-        <List>
-          <ListItem>Making payments</ListItem>
-          <ListItem>Delivery options</ListItem>
-          <ListItem>Buyer Protection</ListItem>
+            <SocialIcon color="#55ACEE">
+              <Twitter />
+            </SocialIcon>
+
+            <SocialIcon color="#E60023">
+              <Pinterest />
+            </SocialIcon>
+          </SocialContainer>
+        </Left>
+        <Center>
+          <Title>Shopping with us</Title>
+          <List>
+            <ListItem>Making payments</ListItem>
+            <ListItem>Delivery options</ListItem>
+            <ListItem>Buyer Protection</ListItem>
+          </List>
           
-          <Title>Collaborate with us</Title>
-          <ListItem>Partnerships</ListItem>
-          <ListItem>Affiliate program</ListItem>
-          <ListItem>DS Center</ListItem>
-          <ListItem>Seller Log In</ListItem>
-          <ListItem>Non-Chinese Seller Registration</ListItem>
-        </List>
-      </Center>
-      <Right>
-        <Title style={{ fontFamily: "poppins" }}>stay connected</Title>
-        <ContactItem>
-          <Room style={{ marginRight: "15px" }} />
-          22 helen Joseph, South Gate, Johannesburg
-        </ContactItem>
-        <ContactItem>
-          <Phone style={{ marginRight: "15px" }} />
-          +27 65 2433 454
-        </ContactItem>
-        <ContactItem style={{ marginLeft: "40px" }}>
-          Developed with ❤️ by Kega M
-        </ContactItem>
-        <ContactItem>
-          <PaymentTypes />
-        </ContactItem>
-      </Right>
+        </Center>
+        <Right>
+          <Title style={{ fontFamily: "poppins" }}>stay connected</Title>
+          <ContactItem>
+            <Room style={{ marginRight: "15px" }} />
+            22 helen Joseph, South Gate, Johannesburg
+          </ContactItem>
+          <ContactItem>
+            <Phone style={{ marginRight: "15px" }} />
+            +27 65 2433 454
+          </ContactItem>
+          <ContactItem style={{ marginLeft: "40px" }}>
+            Developed with ❤️ by Kega M
+          </ContactItem>
+          <ContactItem>
+            <PaymentTypes />
+          </ContactItem>
+        </Right>
+      </div>
+      {/* subcontainer for the bottom footer  */}
+      <div
+        style={{
+          display: "flex",
+          // backgroundColor: "brown",
+          alignContent: "center",
+          justifyContent: "space-between",
+        }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            // backgroundColor: "red",
+            margin:'0px 70px',
+            // width: "60vw",
+            // border: "1px red solid",
+            alignItems: "center",
+            justifyContent: "space-around",
+          }}>
+          <div style={{ marginRight: "30px" }}>
+            <h2>Help</h2>
+            <p>
+              Help Center, Disputes & Reports, Buyer Protection, Report IPR
+              infringement, Regulated Information, Integrity Compliance
+            </p>
+            <br></br>
+
+            <h2>Browse by Category</h2>
+            <p>
+              All Popular, Product, Promotion, Low Price, Great Value, Reviews,
+              Blog, Seller Portal, BLACK FRIDAY, AliExpress Assistant
+            </p>
+          </div>
+          
+          <div style={{}}>
+            <h2>AliExpress Multi-Language Sites </h2>
+            <p>
+              Alibaba Group Website, AliExpress, Alimama, Alipay, Fliggy,
+              Alibaba Cloud, Alibaba International, AliTelecom, DingTalk,
+              Juhuasuan, Taobao Marketplace, Tmall, Taobao Global, AliOS, 1688
+            </p>
+            <br></br>
+            <h2> Alibaba Group </h2>
+            <p>
+            Russian, Portuguese, Spanish, French, German, Italian, Dutch, 
+            Turkish, Japanese, Korean, Thai, Vietnamese, Arabic, Hebrew, Polish
+            </p>
+          </div>
+        </div>
+      </div>
+      <p style={{ color: "white", background: "black", 
+      marginLeft: "50px", marginRight: "50px", 
+      padding: "30px", marginTop: "40px"}}>Intellectual Property Protection - Privacy Policy - Sitemap - Terms of Use - Information for EU consumers - Imprint - Transaction Services Agreement for non-EU/UK Consumers - Terms and Conditions for EU/EEA/UK 
+        Consumers - User Information Legal Enquiry Guide ©️2010-2023 AliExpress.com. All rights reserved. 增值电信业务经营许可证 
+        增值电信业务经营许可证 浙B2-20120091-8 浙公网安备 浙公网安备 33010802002248号</p>
     </Container>
   );
 };
