@@ -82,13 +82,15 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>Paradise Lodge</Logo>
-        <Description>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
-          esse id iste explicabo placeat dolore, minus beatae eaque, sequi enim
-          culpa nostrum quia ipsum accusamus rerum perferendis voluptates
-          doloremque distinctio!
-        </Description>
+        <Logo>Customer service</Logo>
+        <ul style={{ listStyleType: "none" }}>
+          <li>Help center</li>
+          <li>Transaction Services Agreement for</li>
+          <li>non-EU/UK Consumers</li>
+          <li>Terms and Conditions for EU/EEA/UK</li>
+          <li>Consumer Transactions </li>
+          <li>Take our feedback survey</li>
+        </ul>
         <SocialContainer>
           <SocialIcon color="#3B5999">
             <Facebook />
@@ -108,16 +110,18 @@ const Footer = () => {
         </SocialContainer>
       </Left>
       <Center>
-        <Title>Useful Links</Title>
+        <Title>Shopping with us</Title>
         <List>
-          <ListItem>Home</ListItem>
-          <ListItem>Bookings</ListItem>
-          <ListItem>Community forum</ListItem>
-          <ListItem>Help Center</ListItem>
-          <ListItem>Disability support</ListItem>
-          <ListItem>My Account</ListItem>
-          <ListItem>Cancellation support</ListItem>
-          <ListItem>Favourite</ListItem>
+          <ListItem>Making payments</ListItem>
+          <ListItem>Delivery options</ListItem>
+          <ListItem>Buyer Protection</ListItem>
+          
+          <Title>Collaborate with us</Title>
+          <ListItem>Partnerships</ListItem>
+          <ListItem>Affiliate program</ListItem>
+          <ListItem>DS Center</ListItem>
+          <ListItem>Seller Log In</ListItem>
+          <ListItem>Non-Chinese Seller Registration</ListItem>
         </List>
       </Center>
       <Right>

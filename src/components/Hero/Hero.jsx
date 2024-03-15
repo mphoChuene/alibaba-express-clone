@@ -55,8 +55,13 @@ const Hero = () => {
         </ListingSubcontainer>
         <ListingSubcontainer>
             <MonetizationOnOutlinedIcon/>
-            <Title>value-for-money</Title>
-            <Description>we offer competitive prices on <br/> millions of items</Description>
+            <Title>Shoppers worldwide</Title>
+            <Description>More than 300 millions shoppers <br/> from 200+ ountries & regions</Description>
+        </ListingSubcontainer>
+        <ListingSubcontainer>
+            <MonetizationOnOutlinedIcon/>
+            <Title>Fast delivery</Title>
+            <Description>Faster delivery on selected items <br/> thanks to our improved logistics</Description>
         </ListingSubcontainer>
         <ListingSubcontainer>
             <MonetizationOnOutlinedIcon/>
@@ -65,18 +70,13 @@ const Hero = () => {
         </ListingSubcontainer>
         <ListingSubcontainer>
             <MonetizationOnOutlinedIcon/>
-            <Title>value-for-money</Title>
-            <Description>we offer competitive prices on <br/> millions of items</Description>
+            <Title>Buyers protection</Title>
+            <Description>Get refund if items arrive late <br/> or not as described</Description>
         </ListingSubcontainer>
         <ListingSubcontainer>
             <MonetizationOnOutlinedIcon/>
-            <Title>value-for-money</Title>
-            <Description>we offer competitive prices on <br/> millions of items</Description>
-        </ListingSubcontainer>
-        <ListingSubcontainer>
-            <MonetizationOnOutlinedIcon/>
-            <Title>value-for-money</Title>
-            <Description>we offer competitive prices on <br/> millions of items</Description>
+            <Title>Download the AliExpress app</Title>
+            <Description>Shop anywhere & anytime</Description>
         </ListingSubcontainer>
         </ListingContainer>
         </Subdiv> 

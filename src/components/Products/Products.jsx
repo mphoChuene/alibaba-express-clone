@@ -2,6 +2,7 @@ import React from "react";
 import Button from "@mui/material/Button";
 import styled from "styled-components";
 
+
 const Maincontainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -90,7 +91,7 @@ const Products = () => {
       <Subcontainer>
         <BestSeller>
           <h2>Best sellers</h2>
-          <p>get discount on popular items</p>
+          <p>Get discounts on popular items</p>
         </BestSeller>
       </Subcontainer>
       <Subcontainer>

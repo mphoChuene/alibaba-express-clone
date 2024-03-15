@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 import iphone1 from "../../assets/img/iphone xr/david-svihovec-LEtrhrME07g-unsplash.jpg";
 import iphone2 from "./../../assets/img/iphone xr/george-beridze-YBbpgMG_vfg-unsplash.jpg";
+//import img3 from "../../assets/img/newImg/Tekkies.jpeg";
 
 const MainContainer = styled.div`
   display: flex;
@@ -80,7 +81,17 @@ const Slider = () => {
           />
         </ImageContainer>
         <ImageContainer>
-          <Image>image</Image>
+        <img
+            src={iphone2}
+            alt=""
+            style={{
+              height: "200px",
+              width: "200px",
+              borderRadius: "200px",
+              alignSelf: "center",
+              marginRight: "20px",
+            }}
+          />
         </ImageContainer>
         <ImageContainer>
           <Image>image</Image>
