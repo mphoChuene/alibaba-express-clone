@@ -15,7 +15,7 @@ const Maincontainer = styled.div`
   // background-color: red;
   justify-content: space-around;
   margin-top: 30px;
-  margin: 80px;
+  // margin: 80px;
   scale: 0.87;
 `;
 const Subcontainer = styled.div``;

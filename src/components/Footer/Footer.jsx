@@ -1,3 +1,17 @@
+import p1 from "../../assets/img/newImg/pay-1.png";
+import p2 from "../../assets/img/newImg/pay-2 (1).png";
+import p3 from "../../assets/img/newImg/pay-3.png";
+import p4 from "../../assets/img/newImg/pay-4.png";
+import p5 from "../../assets/img/newImg/pay-5.png";
+import p6 from "../../assets/img/newImg/pay-6.png";
+import p7 from "../../assets/img/newImg/pay-7.png";
+import p8 from "../../assets/img/newImg/pay-8.png";
+import p9 from "../../assets/img/newImg/pay-9.png";
+import p10 from "../../assets/img/newImg/pay-10.png";
+import p11 from "../../assets/img/newImg/pay-11.png";
+import p12 from "../../assets/img/newImg/pay-12.png";
+import p13 from "../../assets/img/newImg/pay-13.png";
+
 import {
   Facebook,
   Instagram,
@@ -12,7 +26,7 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   background-color: whitesmoke;
-  height: 500px;
+  height: 850px;
   flex-direction: column;
 `;
 const Left = styled.div`
@@ -31,8 +45,13 @@ const Right = styled.div`
   padding: 20px;
   // background-color: blue;
   height: 260px;
+  margin-right: 150px;
 `;
-const Logo = styled.h1``;
+const Logo = styled.p`
+  position: relative;
+  margin: 40px;
+  bottom: 40px;
+`;
 
 const SocialContainer = styled.div`
   display: flex;
@@ -59,7 +78,7 @@ const Title = styled.h3`
 `;
 
 const List = styled.ul`
-  margin: 0;
+  marginTop: 90px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -89,27 +108,121 @@ const Footer = () => {
     <Container>
       <div style={{ display: "flex" }}>
         <Left>
-          <Logo>Customer service</Logo>
-          <ul style={{ listStyleType: "none" }}>
-            <li>Help center</li>
-            <li>Transaction Services Agreement for</li>
-            <li>non-EU/UK Consumers</li>
-            <li>Terms and Conditions for EU/EEA/UK</li>
-            <li>Consumer Transactions </li>
-            <li>Take our feedback survey</li>
-          </ul>
-          <br></br>
+          <Logo>
+          <h3>Customer service</h3>
+          <Title style={{ listStyleType: "none", fontWeight: "normal"}}>
+            <br></br>
+            <ListItem>Help center</ListItem>
+            <ListItem>Transaction Services Agreement for</ListItem>
+            <ListItem>non-EU/UK Consumers</ListItem>
+            <ListItem>Terms and Conditions for EU/EEA/UK</ListItem>
+            <ListItem>Consumer Transactions </ListItem>
+            <ListItem>Take our feedback survey</ListItem>
+            </Title>
+            </Logo>
         </Left>
         <Center>
+        <div style={{marginLeft: "450px"}}>
+          <Title >Pay with</Title>
+          <div style={{ height: "90px", 
+          width: "90",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-around",
+          marginRight: "40px"}}>
+          <div>
+          <img
+            src={p1}
+            alt=""
+            style={{ height: "30px", width: "40px"}}
+          />
+          <img
+            src={p2}
+            alt=""
+            style={{ height: "30px", width: "40px"}}
+          />
+          <img
+            src={p3}
+            alt=""
+            style={{ height: "30px", width: "40px"}}
+          />
+          <img
+            src={p4}
+            alt=""
+            style={{ height: "30px", width: "40px"}}
+          />
+          <img
+            src={p5}
+            alt=""
+            style={{ height: "30px", width: "40px"}}
+          />
+          <img
+            src={p6}
+            alt=""
+            style={{ height: "30px", width: "40px"}}
+          />
+          </div>
+          <div >
+          <img
+            src={p7}
+            alt=""
+            style={{ height: "30px", width: "40px"}}
+          />
+          <img
+            src={p8}
+            alt=""
+            style={{ height: "30px", width: "40px"}}
+          />
+          <img
+            src={p9}
+            alt=""
+            style={{ height: "30px", width: "40px"}}
+          />
+          <img
+            src={p10}
+            alt=""
+            style={{ height: "30px", width: "40px"}}
+          />
+          <img
+            src={p11}
+            alt=""
+            style={{ height: "30px", width: "40px"}}
+          />
+          <img
+            src={p12}
+            alt=""
+            style={{ height: "30px", width: "40px"}}
+          />
+          </div>
+          <div>
+          <img
+            src={p13}
+            alt=""
+            style={{ height: "30px", width: "40px"}}
+          />
+          </div>
+          </div>
+          </div>
+          <div style={{ position: "relative", bottom: "130px", marginLeft: "150px"}}>
           <Title>Shopping with us</Title>
           <List>
             <ListItem>Making payments</ListItem>
             <ListItem>Delivery options</ListItem>
             <ListItem>Buyer Protection</ListItem>
           </List>
+          <List>
+            <Title> Collaborate with us</Title>
+          <ListItem>Partnerships</ListItem> 
+          <ListItem>Affiliate program</ListItem> 
+          <ListItem>DS Center</ListItem> 
+          <ListItem>Seller Log In</ListItem> 
+          <ListItem>中国卖家入驻</ListItem> 
+          <ListItem>Non-Chinese Seller Registration</ListItem>  
+          </List>
+          </div>
         </Center>
         <Right>
-          <Title style={{ fontFamily: "poppins" }}>stay connected</Title>
+          <Title >Stay connected</Title>
           <SocialContainer>
             <SocialIcon color="black">
               <Facebook />
@@ -148,7 +261,7 @@ const Footer = () => {
             alignItems: "center",
             justifyContent: "space-around",
           }}>
-          <div style={{ marginRight: "30px" }}>
+          <div style={{ marginRight: "30px", cursor: "pointer", marginBottom: "50px"}}>
             <h2>Help</h2>
             <p>
               Help Center, Disputes & Reports, Buyer Protection, Report IPR
@@ -163,7 +276,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div style={{}}>
+          <div style={{ marginBottom: "50px"}}>
             <h2>AliExpress Multi-Language Sites </h2>
             <p>
               Alibaba Group Website, AliExpress, Alimama, Alipay, Fliggy,
@@ -198,6 +311,7 @@ const Footer = () => {
         </p>
       </div>
     </Container>
+    
   );
 };
 

@@ -8,6 +8,8 @@ import Badge from "@mui/material/Badge";
 import Select from "@mui/material/Select";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import QrCodeOutlinedIcon from "@mui/icons-material/QrCodeOutlined";
+import flag from "../../assets/img/newImg/flag.png";
 
 const Container = styled.div`
   background-color: black;
@@ -44,6 +46,8 @@ const NavMenuItem = styled.div`
   padding: 10px;
   color: white;
   cursor: pointer;
+  display: flex;
+  flex-direction: ;
 `;
 
 const SearchContainer = styled.div`
@@ -96,13 +100,17 @@ const Navbar = () => {
           <SearchIcon style={{ color: "black" }} />
         </SearchContainer>
         <NavMenu>
-          <NavMenuItem>dropdown tag</NavMenuItem>
-          <NavMenuItem>dropdown flag</NavMenuItem>
+          <NavMenuItem>
+            <QrCodeOutlinedIcon />
+          </NavMenuItem>
+          <NavMenuItem>
+            <img src={flag} height={20} width={20} />
+          </NavMenuItem>
           <NavMenuItem>
             <PersonOutlineOutlinedIcon />
           </NavMenuItem>
           <NavMenuItem>
-            <Badge badgeContent={cartCount} color="primary" >
+            <Badge badgeContent={cartCount} color="primary">
               <ShoppingCartOutlinedIcon />
             </Badge>
           </NavMenuItem>

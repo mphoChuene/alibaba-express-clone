@@ -17,6 +17,8 @@ const MainContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   margin: 10px;
+  
+  // background-color: blue;
 `;
 const ProductContainer = styled.div`
   height: 480px;
@@ -44,7 +46,7 @@ const ProductListings = () => {
           {/* write the product description and price here */}
           <h3 style={{ fontFamily: "poppins" }}>Iphone 14 Pro Max 256 GB</h3>
           <Rating name="readOnly" readOnly value={5} sx={{ color: "black" }} />
-          <p style={{ fontWeight: "bold",fontSize: "20px" }}>price: R20 000</p>
+          <p style={{ fontWeight: "bold", fontSize: "20px" }}>price: R20 000</p>
           <div style={{ display: "flex", flexDirection: "row" }}>
             <p
               style={{
@@ -54,9 +56,8 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p style={{ color: "crimson"}}> -5% OFF</p>
+            <p style={{ color: "crimson" }}> -5% OFF</p>
           </div>
-          
         </ProductContainer>
         <ProductContainer>
           <img
@@ -67,7 +68,7 @@ const ProductListings = () => {
           {/* write the product description and price here */}
           <h3 style={{ fontFamily: "poppins" }}>Back pack</h3>
           <Rating name="readOnly" readOnly value={2} sx={{ color: "black" }} />
-          <p style={{ fontWeight: "bold",fontSize: "20px" }}>price: R160,00</p>
+          <p style={{ fontWeight: "bold", fontSize: "20px" }}>price: R160,00</p>
           <div style={{ display: "flex", flexDirection: "row" }}>
             <p
               style={{
@@ -77,7 +78,7 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p style={{ color: "crimson"}}> 20% OFF</p>
+            <p style={{ color: "crimson" }}> 20% OFF</p>
           </div>
           <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
@@ -108,7 +109,7 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p style={{ color: "crimson"}}> -8% OFF</p>
+            <p style={{ color: "crimson" }}> -8% OFF</p>
           </div>
           <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
@@ -131,7 +132,7 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p style={{ color: "crimson"}}> EXTRA 10% OFF in bulk...</p>
+            <p style={{ color: "crimson" }}> EXTRA 10% OFF in bulk...</p>
           </div>
           <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
@@ -155,7 +156,7 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p style={{ color: "crimson"}}> -5% OFF in bulk</p>
+            <p style={{ color: "crimson" }}> -5% OFF in bulk</p>
           </div>
           <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
@@ -182,7 +183,7 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p style={{ color: "crimson"}}> 40% OFF...</p>
+            <p style={{ color: "crimson" }}> 40% OFF...</p>
           </div>
           <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
@@ -205,7 +206,7 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p style={{ color: "crimson"}}> -5% OFF</p>
+            <p style={{ color: "crimson" }}> -5% OFF</p>
           </div>
           <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
@@ -218,7 +219,7 @@ const ProductListings = () => {
           {/* write the product description and price here */}
           <h3 style={{ fontFamily: "poppins" }}>Make-up</h3>
           <Rating name="readOnly" readOnly value={5} sx={{ color: "black" }} />
-          <p style={{ fontWeight: "bold" ,fontSize: "20px"}}>price: R100,89</p>
+          <p style={{ fontWeight: "bold", fontSize: "20px" }}>price: R100,89</p>
           <div style={{ display: "flex", flexDirection: "row" }}>
             <p
               style={{
@@ -228,7 +229,7 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p style={{ color: "crimson"}}> -5% OFF in bulk...</p>
+            <p style={{ color: "crimson" }}> -5% OFF in bulk...</p>
           </div>
           <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
@@ -241,7 +242,7 @@ const ProductListings = () => {
           {/* write the product description and price here */}
           <h3 style={{ fontFamily: "poppins" }}>The Foundation</h3>
           <Rating name="readOnly" readOnly value={2} sx={{ color: "black" }} />
-          <p style={{ fontWeight: "bold", fontSize: "20px"}}>price: R107,50</p>
+          <p style={{ fontWeight: "bold", fontSize: "20px" }}>price: R107,50</p>
           <div style={{ display: "flex", flexDirection: "row" }}>
             <p
               style={{
@@ -251,7 +252,7 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p style={{ color: "crimson"}}> Extra 5% Off in coins</p>
+            <p style={{ color: "crimson" }}> Extra 5% Off in coins</p>
           </div>
           <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
@@ -278,7 +279,7 @@ const ProductListings = () => {
               }}>
               Welcome Deals
             </p>
-            <p style={{ color: "crimson"}}> - -68%</p>
+            <p style={{ color: "crimson" }}> - -68%</p>
           </div>
           <p style={{ marginTop: "5px" }}>free shipping</p>
         </ProductContainer>
